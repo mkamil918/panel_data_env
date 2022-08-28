@@ -380,7 +380,7 @@ names(trucost_name) <- c("ISIN", "company_name_trucost", "country_trucost")
 
 # Add industry
 names(final_dataset)[names(final_dataset) == "TRBC Industry Group"] <-
-                    "trbc_industry"
+  "trbc_industry"
 
 final_dataset <- full_join(msci_name, final_dataset, by = "ISIN")
 
